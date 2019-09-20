@@ -12,7 +12,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="387dp"
+        android:layout_height="match_parent"
         android:layout_weight="0">
 
         <LinearLayout
@@ -26,8 +26,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="Welcome"
+                android:textColor="#202020"
                 android:textSize="60dp"
-                app:fontFamily="monospace" />
+                app:fontFamily="cursive" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -35,7 +36,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="My Name is Edgar Melendrez and this is my Random color generator app"
-                android:textSize="30px" />
+                android:textColor="#202020"
+                android:textSize="30px"
+                app:fontFamily="sans-serif-condensed-medium" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -43,6 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="To Change the Color of the Button below click the random button"
+                android:textColor="#202020"
                 android:textSize="20px" />
 
             <LinearLayout
@@ -63,29 +67,52 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Get RGB" />
+                    android:text="Click For RGB" />
 
             </LinearLayout>
+
             <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="0"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="0"
-                app:srcCompat="@drawable/popular_scheme1" />
+                android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                app:srcCompat="@drawable/popular_scheme2" />
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Bellow is four popular palletes that are often used, It is a good way to visualize what colors go well with eachother, hopefully they are useful"
+                    android:textColor="#202020" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/popular_scheme1" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/popular_scheme2" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/popular_scheme3" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/popular_scheme4" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
